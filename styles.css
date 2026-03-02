@@ -329,7 +329,7 @@ body {
 .gif-item img {
     width: auto;
     height: auto;
-    flex: 4;
+    flex: 3;
 }
 
 .gif-desc-box {

@@ -192,6 +192,30 @@ body {
     display: block;
     object-fit: cover;
     transition: transform 0.3s ease;
+    border-radius: 8px; /* round edges for project card images */
+}
+
+/* About section profile picture */
+.about-container .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .about-container .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .project-card:hover .project-media img {

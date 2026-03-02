@@ -293,6 +293,15 @@ body {
 }
 
 /* GIF Section */
+/*
+   Customize the layout by editing the following values:
+   - `grid-template-columns` controls how many GIFs appear per row.
+     Set to `1fr` or `minmax(100%,1fr)` for a single GIF per row.
+     Replace with `repeat(auto-fit, minmax(300px,1fr))` to allow multiple.
+   - `gap` sets spacing between rows (and columns when multi-item).
+   - Inside `.gif-item`, `gap` controls space between GIF and description box.
+   - Adjust `.gif-item img` width or `.gif-desc-box` flex/width to change ratios.
+*/
 .gif-section {
     margin-top: 2rem;
 }
@@ -305,7 +314,8 @@ body {
 
 .gif-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* force one GIF per row */
+    grid-template-columns: 1fr;
     gap: 3rem;
 }
 
@@ -315,11 +325,18 @@ body {
     gap: 1.5rem;
 }
 
+/* the image takes a percentage of the row; tweak to expand/shrink */
+.gif-item img {
+    width: 60%;
+    height: auto;
+    flex-shrink: 0;
+}
+
 .gif-desc-box {
     background-color: #f5f5dc; /* beige */
     padding: 0.75rem 1rem;
     border-radius: 10px;
-    flex: 2;
+    flex: 2; /* increase to allocate more space to text box */
     font-family: 'Brush Script MT', cursive, sans-serif;
 }
 

@@ -344,6 +344,15 @@ body {
     margin: 0;
 }
 
+/* Intro description box at top of project pages */
+.intro-box {
+    background-color: #f5f5dc; /* beige */
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem; /* spacing before gallery */
+}
+
+
 .gif-item {
     text-align: center;
 }

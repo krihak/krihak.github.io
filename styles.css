@@ -305,21 +305,21 @@ body {
 
 .gif-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
 }
 
 .gif-item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .gif-desc-box {
     background-color: #f5f5dc; /* beige */
     padding: 0.75rem 1rem;
     border-radius: 10px;
-    flex: 1;
+    flex: 2;
     font-family: 'Brush Script MT', cursive, sans-serif;
 }
 

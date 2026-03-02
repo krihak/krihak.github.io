@@ -279,6 +279,23 @@ body {
     color: white;
 }
 
+/* Project Button */
+.project-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #2980b9;
+}
+
 /* Footer */
 .footer {
     background-color: #2c3e50;

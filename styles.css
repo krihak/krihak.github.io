@@ -306,7 +306,25 @@ body {
 .gif-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 2.5rem;
+}
+
+.gif-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gif-desc-box {
+    background-color: #f5f5dc; /* beige */
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    flex: 1;
+    font-family: 'Brush Script MT', cursive, sans-serif;
+}
+
+.gif-desc {
+    margin: 0;
 }
 
 .gif-item {

@@ -119,8 +119,8 @@ body {
 
 /* Group wrapper for GIFs: rounded card with padding */
 .gif-group {
-    background: #d4d4d4; /* light gray so box stands out from white page */
-    border: 1px solid #585858;
+    background: #ececec; /* light gray so box stands out from white page */
+    border: 1px solid #e4e4e4;
     border-radius: 12px;
     padding: 1rem 1.25rem;
     margin-bottom: 1.5rem;
@@ -471,7 +471,15 @@ body {
     border-radius: 10px;
     margin-bottom: 2rem; /* spacing before gallery */
 }
+/* Concluding remarks section at end of project pages */
+.concluding-remarks {
+    margin-top: 2rem;
+}
 
+.concluding-remarks h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
 
 .gif-item {
     text-align: center;

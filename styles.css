@@ -316,7 +316,7 @@ body {
     display: grid;
     /* force one GIF per row */
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 4rem;
 }
 
 .gif-item {
@@ -327,7 +327,7 @@ body {
 
 /* the image takes a percentage of the row; tweak to expand/shrink */
 .gif-item img {
-    width: 70%;
+    width: 60%;
     height: auto;
     flex-shrink: 0;
 }
@@ -336,7 +336,7 @@ body {
     background-color: hsl(47, 100%, 89%); /* beige */
     padding: 0.75rem 1rem;
     border-radius: 10px;
-    flex: 3; /* increase to allocate more space to text box */
+    flex: 6; /* increase to allocate more space to text box */
     font-family: 'Brush Script MT', cursive, sans-serif;
 }
 

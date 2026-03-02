@@ -327,16 +327,16 @@ body {
 
 /* the image takes a percentage of the row; tweak to expand/shrink */
 .gif-item img {
-    width: 60%;
+    width: 70%;
     height: auto;
     flex-shrink: 0;
 }
 
 .gif-desc-box {
-    background-color: #f5f5dc; /* beige */
+    background-color: hsl(47, 100%, 89%); /* beige */
     padding: 0.75rem 1rem;
     border-radius: 10px;
-    flex: 2; /* increase to allocate more space to text box */
+    flex: 3; /* increase to allocate more space to text box */
     font-family: 'Brush Script MT', cursive, sans-serif;
 }
 
@@ -357,7 +357,7 @@ body {
 
 .gif-desc {
     margin-top: 0.5rem;
-    color: #555;
+    color: hsl(0, 0%, 21%);
     font-size: 0.95rem;
 }
 

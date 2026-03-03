@@ -20,39 +20,62 @@
         <div class="container">
             <h2>Co-op Card Auto-Battler</h2>
             <p class="editable-text intro-box">
-                Add detailed information about the Co-op Card Auto-Battler project here. 
-                Include gameplay mechanics, your contributions, and any development notes.
+                In this project I wanted to try out Unitys Netcode for GameObjects (NGO) multiplayer framework, so I built a simple co-op card auto-battler prototype.
+                The hosting and joining is handled completely by Unitys Lobby and Relay services.
             </p>
-
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300?text=Gameplay+1" alt="Gameplay 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://via.placeholder.com/400x300?text=Gameplay+2" alt="Gameplay 2">
-                </div>
-                <div class="gallery-item">
-                    <video controls>
-                        <source src="" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
 
             <!-- GIF section -->
             <div class="gif-section">
                 <h3>Development GIFs</h3>
 
                 <div class="gif-group">
-                    <h4>Gameplay Examples</h4>
+                    <h4></h4>
                     <div class="gif-grid">
                         <div class="gif-item">
-                            <img src="https://via.placeholder.com/300x200?text=GIF+1" alt="GIF 1">
-                            <div class="gif-desc-box"><p class="editable-text gif-desc">Note your thoughts or why this gif matters.</p></div>
+                            <img src="https://github.com/krihak/krihak.github.io/raw/main/videofiles/shatteredcrownpart1.gif" alt="GIF 1">
+                            <div class="gif-desc-box"><p class="editable-text gif-desc">This demo is captured from inside Unity with their Multiplayer
+                                play mode tools. The left editor acts as host and the right editor is the client that joins the host's lobby. The host
+                                chooses from a range of different commander cards that have different abilities and synergies.
+                            </p></div>
                         </div>
                         <div class="gif-item">
-                            <img src="https://via.placeholder.com/300x200?text=GIF+2" alt="GIF 2">
-                            <div class="gif-desc-box"><p class="editable-text gif-desc">Explain what you were working on here.</p></div>
+                            <img src="https://github.com/krihak/krihak.github.io/raw/main/videofiles/shatteredcrownpart2.gif" alt="GIF 2">
+                            <div class="gif-desc-box"><p class="editable-text gif-desc">Here the client player joins the host. The host copies their lobby code (top left corner of left editor),
+                                once the client inputs the code they are able to connect and play with the host.
+                            </p></div>
+                        </div>
+                        <div class="gif-item">
+                            <img src="https://github.com/krihak/krihak.github.io/raw/main/videofiles/shatteredcrownpart3.gif" alt="GIF 1">
+                            <div class="gif-desc-box"><p class="editable-text gif-desc">Here I'm showcasing a pretty cool holographic effect that I made
+                                using Unity's shader graph. When the player mouses over a card the game showcases that card closer and rotates the card and
+                                this makes the holographic effect look nice. (The cards are 3d objects in the game!)
+                            </p></div>
+                        </div>
+                        <div class="gif-item">
+                            <img src="https://github.com/krihak/krihak.github.io/raw/main/videofiles/shatteredcrownpart4.gif" alt="GIF 2">
+                            <div class="gif-desc-box"><p class="editable-text gif-desc">The players occupy their side of the board with units they can buy from the shop. 
+                                Aquiring three units of the same type will merge them into a stronger version. (Three tiers: Bronze, Silver, Gold)
+                            </p></div>
+                        </div>
+                        <div class="gif-item">
+                            <img src="https://github.com/krihak/krihak.github.io/raw/main/videofiles/shatteredcrownpart5.gif" alt="GIF 1">
+                            <div class="gif-desc-box"><p class="editable-text gif-desc">Here I'm showing off the networking part of the game
+                                the movement of the cards is replicated across the network. So when one player is moving their card around both
+                                players see the card moving in the same way. (The host is moving a card here)
+                            </p></div>
+                        </div>
+                        <div class="gif-item">
+                            <img src="https://github.com/krihak/krihak.github.io/raw/main/videofiles/shatteredcrownpart6.gif" alt="GIF 2">
+                            <div class="gif-desc-box"><p class="editable-text gif-desc">Showcase of the combat in the game. The units on the board will automatically attack each other when combat 
+                                is initiated. Attack order is determined by the units' speed stat. And units will attack the closest enemy unit by default. Units will also
+                                get buffs if there are many units of the same type on the board in this example there are 5 unique humans on the board.
+                            </p></div>
+                        </div>
+                        <div class="gif-item">
+                            <img src="https://github.com/krihak/krihak.github.io/raw/main/videofiles/shatteredcrownpart7.gif" alt="GIF 2">
+                            <div class="gif-desc-box"><p class="editable-text gif-desc">When combat is done the players can proceed together a new encounter loads up and the board state is shared between the players.
+                                Players are also free to reposition their units on the board before starting combat.
+                            </p></div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +86,10 @@
             <div class="concluding-remarks">
                 <h3>Final Thoughts</h3>
                 <p class="editable-text intro-box">
-                    Add your final thoughts, key learnings, or achievements from this project here. What are you most proud of? What would you do differently next time?
+                    This was a fun project to work on and it was a great way to learn the basics of Unity's multiplayer framework. 
+                    Building replicated objects and systems require an additional layer of thinking to make sure the game state is consistent across the network and that the game is responsive for all players.
+                    Specifically thinking about what should be server authorative and what should be client authorative is an important part of building a multiplayer game.
+                    And with this project i got to practice that type of thinking!
                 </p>
             </div>
 
